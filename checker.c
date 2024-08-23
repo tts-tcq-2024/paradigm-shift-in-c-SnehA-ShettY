@@ -18,7 +18,7 @@ int batteryIsOk(float temperature, float soc, float charge_rate)
     
     temp_range_check = range_check(temperature, 0, 45, "Temperature out of range!");
     soc_range_check = range_check(soc, 20, 80, "State of Charge out of range!");
-    charge_rate_range_check = range_check(chargeRate, 0, 0.8, "Charge Rate out of range!");
+    charge_rate_range_check = range_check(charge_rate, 0, 0.8, "Charge Rate out of range!");
 
     return !(temp_range_check || soc_range_check || charge_rate_range_check);
 }
