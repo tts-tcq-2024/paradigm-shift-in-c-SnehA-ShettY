@@ -12,7 +12,7 @@ int range_check(float value, float min, float max, const char* message)
     return 0;
 }
 
-int batteryIsOk(float temperature, float soc, float charge_rate) {
+int batteryIsOk(float temperature, float soc, float charge_rate) 
 {
     int temp_range_check, soc_range_check, charge_rate_range_check;
     
